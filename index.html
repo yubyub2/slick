@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="main">
+            <div class="your-class">
+                <div class="s1">
+                    <video autoplay muted controls
+                        src="http://h.vod.cgv.co.kr:80/vodCGVa/86072/86072_210698_1200_128_960_540.mp4"></video>
+                    <!-- 비디오 넣을땐 오토플레이&뮤티드 필수 -->
+                </div>
+                <div class="s2"><video autoplay muted controls
+                        src="http://h.vod.cgv.co.kr:80/vodCGVa/86072/86072_210881_1200_128_960_540.mp4"></video></div>
+                <div class="s3"><video autoplay muted controls
+                        src="http://h.vod.cgv.co.kr:80/vodCGVa/86072/86072_211051_1200_128_960_540.mp4"></video></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> <!-- -> 이렇게 불러온거 사이에는 뭐 적으면 깨짐 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.your-class').slick({
+                // 오토플레이나 닷츠가 기본값이 false니까 trure바꿔줘야 보임
+                autoplay:true,
+                dots:true,
+                fade:true,
+            });
+        });
+    </script>
+
+</body>
+
+</html>
